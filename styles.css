@@ -559,20 +559,15 @@ body {
     font-size: 0.9em;
 
 }
-/* Ensure the Quick Actions grid is a responsive grid */
-.actions-grid {
-    display: grid;
-    /* Use repeat function for a flexible layout */
-    /* This rule tries to fit as many items as possible, each at least 150px wide */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    gap: 20px;
-    padding: 20px 0;
-    max-width: 1200px;
-    margin: 0 auto;
+.dark-blue-bg {
+    background-color: #1e3c72; /* Or any color you prefer for this item */
+    color: white;
 }
 
-/* Also, ensure your new color class is defined (if it wasn't already) */
-.dark-blue-bg {
-    background-color: #1e3c72; /* Dark blue color */
-    color: white;
+.actions-grid {
+    display: grid;
+    /* This ensures all 5 items try to fit on one row when the screen is wide enough */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px;
+    /* ... other styles ... */
 }
